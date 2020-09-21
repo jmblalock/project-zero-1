@@ -12,23 +12,17 @@ Everyone will get a chance to **be creative**, and work through some really **to
 
 ---
 
-### Proposal
-
-**Your Project must be approved before you start coding.** Your instructor will need to see and approve your user stories and wireframes, and will want you to have an idea of the organization of your app before your start.  This may require you to go back to the drawing board.  The instructor will help you make sure that you scoped out an achievable MVP (simple enough that you think you could get it built well ahead of the deadline) well-defined, along with a few nice-to-haves and stretch goals. 
-
-
 ### Technical Requirements
 
 Your app must:
 * **HAVE ITS OWN REPO, under your github account. NOT A FORK.**
+* **Git 20+ commits** Commit early, commit often. Tell a story with your commits. Each message should give a clear idea what you changed.
 * **Include Wireframes and User Stories in the README** 
 * **Wireframe:** - Basically draw out what your game will look like—very different way it could look. You can use paper or any wireframe tool you find online.
 * **User Stories** - Wording should center around how a user interacts with your game, for example:
     1.  The user click starts and the level starts
-    2.  When the user hits the ```f key``` a fire ball is catuplulated into the galaxy. 
+    2.  When the user hits the ```f key``` a fire ball is catuplulated at a target. 
 * **Render a game in the browser**
-* **Switch turns** between two players, if your game doesn't make sense for two players talk to your local instructor about it 
-* **Design logic for winning** & **visually display which player won**
 * **Include separate HTML / CSS / JavaScript files**
 * Stick with **KISS (Keep It Simple Stupid)** and **DRY (Don't Repeat Yourself)** principles
 * Use **JavaScript or jQuery** for **DOM manipulation**
@@ -45,51 +39,12 @@ Your app must:
 * A **link to your hosted working game** in the URL section of your Github repo
 * A **git repository hosted on Github**, with a link to your hosted game, and frequent commits dating back to the very beginning of the project.
 * **A ``README.md`` file** with an explanation of what the project is and why you made it, your user stories, explanations of the technologies used, the approach taken, installation instructions, unsolved problems, the other components previously indicated (if applicable).  In this project, also include your wireframes in the readme. 
-
----
-
-### Suggested Ways to Get Started
-
-* **Break the project down into different components** (data, presentation, views, style, DOM manipulation) and brainstorm each component individually. Use whiteboards!
-* **Use your Development Tools** (console.log, element inspector, alert statements, etc) to debug and solve problems
-* During the day, work through problems in class & **ask questions when you need to!** We're here to help prevent you from burning through your time with wild goose chases. Add relevant code to your game each night too, instead of, you know... _procrastinating_.
-* **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version. There should be _at least_ a couple dozen commits. 
-* **Consult documentation resources** (MDN, jQuery, etc.) at home to better understand what you’ll be getting into.
-* **Plan to write code that you know you will have to remove later.** Create temporary elements (buttons, links, etc) that trigger events if real data is not available. For example, if you’re trying to figure out how to change some text when the game is over but you haven’t solved the win/lose game logic, you can create a button to simulate that until then.
-
----
-
-### Sample Project Ideas
-
-##### Blackjack
-Make a one player game where people down on their luck can lose all their money by guessing which card the computer will deal next!
-
-##### Concentration
-Sometimes just called "Memory", it's a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. If you get all the matching cards, you've won!
-
-##### Self-scoring Trivia
-Test your wits & knowledge with whatever-the-heck you know about (so you can actually win). Guess answers, have the computer tell you how right you are!
-
----
-
-### A few from earlier cohorts
-
-https://kmikitin.github.io/Quarto/ <br>
-https://sierramoore.github.io/vampire-game/ <br>
-https://scrummish.github.io/Space-Invaders-2018/ <br>
-https://webermn15.github.io/Scorch_a-scorched-earth-clone/ <br>
-https://anthonyjlower.github.io/canvas-football-game/ <br>
-https://cswormstedt.github.io/project1/
-https://theprosumer.github.io/theprosumer.io/project1/
-https://jccraigw.github.io/project1_Desktop/
-(same as above, mobile friendly): https://jccraigw.github.io/project1/
-https://obajuluwa3.github.io/3-Card-Monte/
-
----
-
-### Extra challenge...
-
-* See if you can reseasrch and use at least thing/technology/resource we didn't explicitly study in class (Some API? Some sweet library? Skeleton or Bootstrap? Firebase? Canvas? Three.js? D3? CSS Keyframes/Animation? Note: Phaser is _not_ allowed, and **outside library use is strictly subject to instructor approval**)
+* A 10 minute presentation to your classmates and instructor, illustrating:
+    * App functionality
+    * Triumphs
+    * Challenges
+    * Words of Wisdom
+    * Code snippets
 
 ---
 
@@ -98,12 +53,13 @@ https://obajuluwa3.github.io/3-Card-Monte/
 * **[MDN Javascript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** _(a great reference for all things  Javascript)_
 * **[jQuery Docs](http://api.jquery.com)** _(if you're using jQuery)_
 * **[Github Pages](https://pages.github.com)** _(for hosting your game)_
+* **[Example Readme Files](https://git.generalassemb.ly/r-sei-12/Project_Planning_Examples)** _(a great reference for planning materials)_
 
 ---
 
 ### Project Feedback + Evaluation
 
-* __Project Workflow__: Did you complete the user stories, wireframes, task tracking, and/or ERDs, as specified above? Did you use source control as expected for the phase of the program you’re in (detailed above)?
+* __Project Workflow__: Did you complete the user stories and wireframes as specified above? Did you use source control as expected for the phase of the program you’re in (detailed above)?
 
 * __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
 
@@ -123,3 +79,44 @@ https://obajuluwa3.github.io/3-Card-Monte/
     **3** | _Exceeds expectations, great job!_
 
 This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+
+---
+
+### Suggested Ways to Get Started
+
+* **Break the project down into different components** (data, presentation, views, style, DOM manipulation) and brainstorm each component individually. Use whiteboards!
+* **Use your Development Tools** (console.log, element inspector, alert statements, etc) to debug and solve problems
+* During the day, work through problems in class & **ask questions when you need to!** We're here to help prevent you from burning through your time with wild goose chases. Add relevant code to your game each night too, instead of, you know... _procrastinating_.
+* **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version. There should be _at least_ a couple dozen commits. 
+* **Consult documentation resources** (MDN, jQuery, etc.) at home to better understand what you’ll be getting into.
+* **Plan to write code that you know you will have to remove later.** Create temporary elements (buttons, links, etc) that trigger events if real data is not available. For example, if you’re trying to figure out how to change some text when the game is over but you haven’t solved the win/lose game logic, you can create a button to simulate that until then.
+
+---
+
+### Specifications
+  
+* Create a repo for your tomagotchi pet
+* make a commit after you finish each one of the following
+* Create a Class (JS Class, look at your notes if your forget) for your tomagotchi
+* Instatiate your Tomagotchi
+* Display a character of your choice on the screen to represent your pet
+* Display the following metrics for your pet: 
+ * Hunger (1-10 scale)
+ * Sleepiness (1-10 scale)
+ * Boredom (1-10 scale)
+ * Age
+* Add buttons to the screen to feed your pet, turn off the lights, and play with your pet.
+* Add the ability to name your pet.
+* Style the page.
+* Increase your pet's age every x minutes
+* Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your choosing.
+* You pet should die if Hunger, Boredom, or Sleepiness hits 10.
+* Morph your pet at certain ages.
+* Animate your pet across the screen while it's alive.
+
+### Extras
+* Have your tomagotchi give birth to baby tomagotchi...
+* ...with special powers (extend the class)!
+* Add an `excercise()` method to your tomagotchi, that affects certain properties
+* Add anything you can think of... use your imagination!
+
