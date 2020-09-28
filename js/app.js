@@ -5,6 +5,9 @@ const SCENES = ["day", "night"];
 const writeModal = function writeModal (text = "") {
     document.querySelector(".modal")  
     .innerHTML = `<div class="modal-inner">${text}</div>`;
+};  
+const modScene = function modScene (state) {
+    document.querySelector(".game").className = `game ${state}`;
 };
 
 class Tomagatchi {
@@ -33,13 +36,17 @@ class Tomagatchi {
         this.fatigue--;
     }
     feed() {
+        modScene("day");
         this.hunger--;
     }
     evolve() {
+        modScene("day");
         writeModal(`${this.name} evolved!`);
     }
     die() {
         this.current = "DEAD";
+        this.resetCounters();
+        writeModal(`${this.name} died. <br/> Press the middle button to start`);
     }
     resetCounters() {
         this.clock = 0;
