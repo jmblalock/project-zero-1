@@ -1,5 +1,6 @@
 const ICONS = ["feed", "lightsOut", "play"];
 const SCENES = ["day", "night"];
+const TICK_RATE = 3000;
 
 // Displays Name, Age, Hunger, Fatigue and Bordom
 const writeModal = function writeModal (text = "") {
@@ -14,6 +15,29 @@ const modScene = function modScene (state) {
 const modDog = function modDog (state) {
     document.querySelector(".dog").className = `dog dog-${state}`;
 };
+
+const toggleHighlighted = (icon, show) =>
+    document.querySelector(`.${ICONS[icon]}-icon`)
+    .classList.toggle("highlighted", show);
+
+    function initButtons(handleUserAction) {
+        let selectedIcon = 0;
+        function buttonClick({ target }) {
+        if (target.classList.contains("right-btn")) {
+            toggleHighlighted(selectedIcon, false);
+            selectedIcon = (2 + selectedIcon) % ICONS.length;
+            toggleHighlighted(selectedIcon, true);
+        } else if (target.classList.contains("left-btn")) {
+            toggleHighlighted(selectedIcon, false);
+            selectedIcon = (1 + selectedIcon) % ICONS.length;
+            toggleHighlighted(selectedIcon, true);
+        } else {
+            handleUserAction(ICONS[selectedIcon]);
+            toggleHighlighted(selectedIcon, true);
+        }
+    } 
+        document.querySelector(".buttons").addEventListener("click", buttonClick);
+    }
 
 class Tomagatchi {
     constructor (name) {
