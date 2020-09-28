@@ -143,7 +143,7 @@ class Tomagatchi {
         }
 };
     
-    const handleUserAction = gameState.handleUserAction.bind(gameState);
+const handleUserAction = gameState.handleUserAction.bind(gameState);
     
 /***************************************************************************************
 *    Title: Complete Front-End Project: Build a Game
@@ -170,5 +170,4 @@ async function init() {
 }
     
 init();
-
 gameState = new Tomagatchi();
