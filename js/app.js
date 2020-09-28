@@ -23,7 +23,9 @@ class Tomagatchi {
 
     }
     die() {
-        
+
     }
  
 };
+
+gameState = new Tomagatchi();
