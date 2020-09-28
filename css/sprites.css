@@ -22,3 +22,140 @@
 .btn:focus {
     background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/BUTTONS/Hover.png);
 }
+
+.btn:active {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/BUTTONS/Selected.png);
+}
+
+.icon {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/BUTTONS/NotSelected.png);
+    background-position: 0px;
+    width: 56px;
+    height: 65px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.icon.play-icon {
+    background-position: -162px 0px;
+}
+
+.icon.lightsOut-icon {
+    background-position: -323px 0px;
+}
+
+.icon.highlighted {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/ICONS/Hover.png);
+}
+
+.icon.active {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/ICONS/Selected.png);
+}
+
+.dog-playing {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/pet/Playing.png);
+    background-repeat: no-repeat;
+    width: 117px;
+    height: 165px;
+    animation: play 2s steps(3) infinite;
+}
+
+@keyframes play {
+    to {
+        background-position: -372px;
+    }
+}
+
+.dog.dog-evolving {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/pet/Evolving.png);
+    background-position: -1836px;
+    background-repeat: no-repeat;
+    width: 204px;
+    height: 202px;
+    animation: evolving 3s steps(10) infinite;
+}
+
+@keyframes evolving {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -2040px;
+    }
+}
+
+.dog-eating.dog {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/pet/Eating.png);
+    background-position: -1865.7px;
+    background-repeat: no-repeat;
+    width: 207.3px;
+    height: 148px;
+    top: 358px;
+    left: 81px;
+    animation: eating 3s steps(10) infinite;
+}
+
+@keyframes eating {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -2073px;
+    }
+}
+
+.dog-egg.dog {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/pet/Egg.png);
+    background-repeat: no-repeat;
+    background-position: -1050px;
+    width: 175px;
+    height: 217px;
+    animation: hatching 9s steps(7);
+}
+
+@keyframes hatching {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1225px;
+    }
+}
+
+.dog-sleep.dog {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/pet/Sleeping.png);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 155px;
+    animation: sleeping 4s steps(4) infinite;
+}
+
+@keyframes sleeping {
+    to {
+        background-position: -1000px;
+    }
+}
+
+.frame {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/FRAME.png);
+}
+
+.game {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/DAY.png);
+}
+
+.game.night {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/NIGHT.png);
+}
+
+.game.dead {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/DEAD.png);
+}
+
+body {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
