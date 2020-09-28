@@ -27,3 +27,18 @@ body {
     background-color: blueviolet;
     color: white;
 }
+
+.modal:empty {
+    display: none;
+}
+
+.modal-inner:empty {
+    display: none;
+}
+
+.dog {
+    position: absolute;
+    top: 336px;
+    left: 285px;
+    overflow: hidden;
+}
