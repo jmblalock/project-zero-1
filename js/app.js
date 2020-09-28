@@ -68,7 +68,7 @@ const gameState = {
                         Fatigue: ${this.fatigue}/10  Bordom: ${this.bordom}/10`);
         } else if (this.hunger >= 10 || this.fatigue >= 10 || this.bordom >= 10) {
             this.die();
-        } else if (this.age === 3) {
+        } else if (this.age >= 3) {
             this.evolve();
         }
 
@@ -122,7 +122,7 @@ const gameState = {
     evolve() {
         modScene("day");
         modDog("evolving");
-        writeModal(`${this.name} evolved!`);
+        console.log(`${this.name} evolved!`);
     },
     die() {
         this.current = "DEAD";
