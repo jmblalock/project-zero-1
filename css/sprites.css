@@ -1,0 +1,24 @@
+.btn {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/BUTTONS/NotSelected.png);
+    background-position: 0px;
+    width: 62px;
+    height: 65px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.btn.middle-btn {
+    background-position: -84px 0px;
+}
+
+.btn.right-btn {
+    background-position: -167px 0px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-image: url(/Users/justinblalock/sei/deliverables/project-zero-1/bg/BUTTONS/Hover.png);
+}

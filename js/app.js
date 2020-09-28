@@ -5,9 +5,14 @@ const SCENES = ["day", "night"];
 const writeModal = function writeModal (text = "") {
     document.querySelector(".modal")  
     .innerHTML = `<div class="modal-inner">${text}</div>`;
-};  
+};
+// Changes day/night
 const modScene = function modScene (state) {
     document.querySelector(".game").className = `game ${state}`;
+};
+// Change Dog
+const modDog = function modDog (state) {
+    document.querySelector(".dog").className = `dog dog-${state}`;
 };
 
 class Tomagatchi {
@@ -21,7 +26,14 @@ class Tomagatchi {
         this.age = 0;
     }
     tick() {
+        this.clock++;
+        console.log(this.clock);
 
+    if (this.clock % 5 === 0 && this.current === 'ALIVE') {
+        this.bordom++;
+        writeModal(`Name: ${this.name}  Age: ${this.age}  Hunger: ${this.hunger}/10  
+                Fatigue: ${this.fatigue}/10  Bordom: ${this.bordom}/10`);
+    }
     }
     startgame() {
 
