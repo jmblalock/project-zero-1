@@ -42,3 +42,22 @@ body {
     left: 285px;
     overflow: hidden;
 }
+
+.dog-evolving {
+    top: 319px;
+    left: 159px;
+}
+
+.dog-eating {
+    top: 362px;
+}
+
+.dog-egg {
+    top: 289px;
+    left: 248px;
+}
+
+.dog-sleep {
+    top: 351px;
+    left: 445px;
+}
